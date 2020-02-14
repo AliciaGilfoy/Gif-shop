@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gif Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+
+<body>
+    <header class="container-fluid bg-secondary">
+        <div class="row title-row text-center">
+            <div class="col 12">
+                <h2>Gif Shop</h2>
+            </div>
+        </div>
+    </header>
+    <main id="shop-gifs" class="container-fluid">
+        <div class="row search-row">
+            <div class="col-12 bg-info text-center pt-3">
+                <h2>Gif Search Results</h2>
+            </div>
+            <div class="col-12 bg-info pt-3">
+                <form class="form-inline" onsubmit="app.gifsController.getGifBySearch(event)">
+                    <label class="sr-only" for="query">Search</label>
+                    <input type="text" name="query" class="form-control mb-2 mr-sm-2" id="query"
+                        placeholder="Cats, funny, etc...">
+                    <button type="submit" class="btn btn-success border border-dark mb-2">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="row gif-row" id="gif-row">
+            <!-- <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="..." class="card-img" alt="..." height="400" width="200">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text</p>
+                        <button class="card-text btn save-button text-success"><i class="far fa-save"></i></button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <main class="container-fluid">
+        <div class="row my-title-row text-center">
+            <div class="col-12 bg-info">
+                <h2>My Saved Gifs</h2>
+            </div>
+        </div>
+        <div class="row gif-row" id="saved-gifs">
+            <!-- <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="..." class="card-img" alt="..." height="400" width="200">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text</p>
+                        <button class="card-text btn save-button text-danger"><i class="far fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <footer class="container-fluid bg-secondary">
+        <div class="row footer-row text-right">
+            <div class="col-12">
+                <h4>Brought to you by Giphy.com</h4>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"
+        integrity="sha256-bd8XIKzrtyJ1O5Sh3Xp3GiuMIzWC42ZekvrMMD4GxRg=" crossorigin="anonymous"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>

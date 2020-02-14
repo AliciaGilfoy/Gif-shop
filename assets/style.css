@@ -1,0 +1,44 @@
+body{
+  max-width: 100vw;
+}
+
+.card-img-overlay{
+  top: unset;
+  top: unset;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.save-button{
+  background-color: transparent;
+  font-size: x-large;
+  align-self: center;
+  text-shadow: 1px 1px black;
+}
+
+.delete-button{
+  background-color: transparent;
+  font-size: x-large;
+  align-self: center;
+  text-shadow: 1px 1px black;
+}
+
+.card{
+  margin: 1rem;
+  text-shadow: 1px 1px black;
+}
+
+.gif-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 75vh;
+  position: relative;
+  overflow-y: scroll;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(148, 150, 149, 0.603);
+  padding-left: 2rem;
+}
